@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial scale=1" />
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+	<title>Search Filtering</title>
+	<style>
+		.box{
+			width: 700px;
+			padding: 50px;
+			margin: auto;
+			background-color: #dedede;
+			position: relative;
+		}
+		.box th{
+			text-align: center;
+		}	
+		.box td{
+			text-align: center;
+		}
+		.box #myInput{
+			width: 250px;
+			padding: 12px;
+			border: 1px solid #dddddd;
+			border-radius: 10px;
+		}
+		.box #notice{
+			width: 26px;
+			height: 26px;
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 150px;
+			margin: 302px auto;
+			display: none;
+		}
+		.box a{
+			text-decoration: none;
+			padding: 6px;
+			background-color: #3b883b;
+			color: #d9d7d7;
+			border: 1px solid brown;
+			border-radius: 10px;
+			font-family: tahoma;
+			font-size: 20px;
+			font-weight: bold;
+		}	
+		.box #google{
+			text-decoration: none;
+			padding: 6px;
+			background-color: yellow;
+			color: black;
+			border: 1px solid brown;
+			border-radius: 10px;
+			font-family: tahoma;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.box a:hover{
+			background-color: brown;
+			color: black;
+		}
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		td, th {
+			border: 2px solid teal;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #aaa;
+		}
+		#imges{
+			width: 300px;
+			height: 300px;
+		}
+		#mypic{
+			width: 100px;
+			height: 100px;
+			box-shadow: 0px 0px 77px red;
+			border-radius: 50%;
+			margin-top: -70px;
+			margin-left: 515px;
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<div class="box">
+	
+		<span style="color: red; font-size: 25px; text-shadow: 9px 12px 2px black, 0 0 25px blue, 0 0 5px darkblue">Developer by Abdul Gaffar</span>
+		<img id="mypic" src="https://scontent.fdac6-1.fna.fbcdn.net/v/t1.0-9/p720x720/106804622_857735634751925_5499722699315534054_o.jpg?_nc_cat=108&_nc_sid=dd9801&_nc_eui2=AeEWxjApL5ebWNOMRp5JCNMNfi3HtGH8W_N-Lce0Yfxb8xM8kCP-Q2iyK_SLw0HOHyPrBXzHJpyY3kWg9D0ujziG&_nc_ohc=V0Xw8nEH7ZIAX_HlKZ5&_nc_ht=scontent.fdac6-1.fna&tp=6&oh=9ce6b567f24737cf57d3ef5c43fb15f9&oe=5F88FFF3" alt="" /> <br />
+		
+		<h3 style="color: fuchsia; font-style: italic;"> Aptouch Polytechnic Institute. Department of Computer. Session: 2017-2018 all Student Information. </h3>
+		
+		<h1 style="color: teal;" >Search Your Name or Roll Number.. </h1>
+		<img id="notice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/OOjs_UI_icon_notice-destructive.svg/768px-OOjs_UI_icon_notice-destructive.svg.png" alt="" />
+
+		<input id="myInput" type="text" placeholder="Search..">
+		<img src="notice.png" alt="" />
+		<br><br>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Facebook ID</th>
+					<th>Roll No</th>
+				</tr>
+			</thead>
+			
+			<tbody id="myTable">			  
+				<tr>
+					<td>Beauty Akter Keya</td>
+					<td> <a href="https://www.facebook.com/sabiha.adnin.5?__tn__=%2Cd-]-h-R&eid=ARADvFBxBwtv-jc1pyYb89XuyjWEKyMLozEq4QJJ99YAQz3cwFCDSGKH-17KzzfLk1Si17hS1S0TZYGS" target="blank">Click now</a></td>
+					<td>944433</td>
+				</tr>			
+				<tr>
+					<td>Md. Abu Sayed</td>
+					<td><a href="https://www.facebook.com/selfishmadboy" target="blank">Click now</a></td>
+					<td>944434</td>
+				</tr>			
+				<tr>
+					<td>Omar Faruk Santo</td>
+					<td><a href="https://www.facebook.com/mdshanto.shanto.5209" target="blank">Click now</a></td>
+					<td>944435</td>
+				</tr>
+				<tr>
+					<td>Emon Islam </td>
+					<td><a href="https://www.facebook.com/minhaz.emon.56" target="blank">Click now</a></td>
+					<td>944436</td>
+				</tr>		
+				<tr>
+					<td>Md. Kaousar Ali</td>
+					<td><a href="https://www.facebook.com/md.mdkaousar" target="new">Click now</a></td>
+					<td>944437</td>
+				</tr>	
+				<tr>
+					<td>Mirmoy Dus</td>
+					<td><a id="google" href="http://google.com" target="new">Click now</a></td>
+					<td>944439</td>
+				</tr>	
+				<tr>
+					<td>Sihab Sahriar</td>
+					<td><a href="https://www.facebook.com/official.sahriar" target="new">Click now</a></td>
+					<td>944440</td>
+				</tr>	
+				<tr>
+					<td>Marjan Islam Suttey</td>
+					<td><a id="google" href="" target="new">Click now</a></td>
+					<td>944441</td>
+				</tr>			
+				<tr>
+					<td>China Mony Shela</td>
+					<td><a href="https://www.facebook.com/shila.moni.58118774?__tn__=%2Cd-]-h-R&eid=ARCmnD0hc9DQPKTHVp8yvcwRqidXFQF6-GkSPjbkUe6BOkytebfhtrPx4-RMSeDDo9FwpVyFbBCVcXwR" target="new">Click now</a></td>
+					<td>944443</td>
+				</tr>			
+				<tr>
+					<td>Abdul Sattar</td>
+					<td><a href="https://www.facebook.com/abdul.satter.1614" target="new">Click now</a></td>
+					<td>944444</td>
+				</tr>		
+				<tr>
+					<td>Ruma Rani</td>
+					<td><a href="https://www.facebook.com/monowara.akter.982" target="new">Click now</a></td>
+					<td>944445</td>
+				</tr>			
+				<tr>
+					<td>Monowara Begum</td>
+					<td><a href="https://www.facebook.com/rumarani.rani.336" target="new">Click now</a></td>
+					<td>944446</td>
+				</tr>			
+				<tr>
+					<td>Mst. Arjuna Akter</td>
+					<td><a href="https://www.facebook.com/profile.php?id=100037643237562&lst=100015464892884%3A100037643237562%3A1600368607&sk=friends&source_ref=pb_friends_tl" target="new">Click now</a></td>
+					<td>944447</td>
+				</tr>			
+				<tr>
+					<td>Sathi Begum</td>
+					<td><a id="google" href="http://google.com" target="new">Click now</a></td>
+					<td>944449</td>
+				</tr>		
+				<tr>
+					<td>Md. Tuhin Rana</td>
+					<td><a href="https://www.facebook.com/tuhinrana.tuhin.549" target="new">Click now</a></td>
+					<td>944450</td>
+				</tr>			
+				<tr>
+					<td>Mostakima Khatun Dola</td>
+					<td><a href="https://www.facebook.com/profile.php?id=100016358775341" target="new">Click now</a></td>
+					<td>944453</td>
+				</tr>			
+				<tr>
+					<td>Md. Ariful Islam</td>
+					<td><a id="google" href="http://google.com" target="new">Click now</a></td>
+					<td>944454</td>
+				</tr>		
+				<tr>
+					<td>Md. Nihad Morsed </td>
+					<td><a href="https://www.facebook.com/md.nihadali" target="new">Click now</a></td>
+					<td>944456</td>
+				</tr>			
+				<tr>
+					<td>Md. Abdul Gaffar</td>
+					<td><a href="https://www.facebook.com/abdulgaffar530" target="new">Click now</a></td>
+					<td>944457</td>
+				</tr>		
+				<tr>
+					<td>Roshni Akter</td>
+					<td><a id="google" href="http://google.com">Click now</a></td>
+					<td>944458</td>
+				</tr>		
+				<tr>
+					<td>Md. Parvas Ahamed</td>
+					<td><a href="https://www.facebook.com/parves.pl.3" target="new">Click now</a></td>
+					<td>944459</td>
+				</tr>				
+				<tr>
+					<td>Md. Lemon Babu </td>
+					<td><a href="https://www.facebook.com/mdlemon.babu.5" target="new">Click now</a></td>
+					<td>944460</td>
+				</tr>			
+				<tr>
+					<td>Liyan Chandro Ray</td>
+					<td><a href="https://www.facebook.com/liyanchandroroy.apom" target="new">Click now</a></td>
+					<td>944461</td>
+				</tr>		
+				<tr>
+					<td>Mst. Israt Jahan Shishir</td>
+					<td><a href="https://www.facebook.com/profile.php?id=100041663970671&fref=profile_friend_list&hc_location=friends_tab" target="new">Click now</a></td>
+					<td>944464</td>
+				</tr>			
+				<tr>
+					<td>Mst. Miftaul Jannat</td>
+					<td><a id="google" href="http://google.com" target="new">Click now</a></td>
+					<td>944465</td>
+				</tr>			
+				<tr>
+					<td>Md. Rubayed Hossen</td>
+					<td><a href="https://www.facebook.com/md.radif.710?ref=br_rs" target="new">Click now</a></td>
+					<td>944466</td>
+				</tr>			
+				<tr>
+					<td>Mst. Tithe Akter</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>944467</td>
+				</tr>	
+				<tr>
+					<td>Md. Sabbir Rahman</td>
+					<td><a href="https://www.facebook.com/sabbirbd5250" target="new">Click now</a></td>
+					<td>944468</td>
+				</tr>						
+				<tr>
+					<td>Wasek Rahman</td>
+					<td><a href="https://www.facebook.com/wasekrahman.rafi" target="new">Click now</a></td>
+					<td>944469</td>
+				</tr>						
+				<tr>
+					<td>Shadot Hossan Riyad</td>
+					<td><a href="https://www.facebook.com/Official.Riyad" target="new">Click now</a></td>
+					<td>944470</td>
+				</tr>	
+				<tr>
+					<td>Md. Sakib</td>
+					<td><a href="https://www.facebook.com/profile.php?id=100013392579802" target="new">Click now</a></td>
+					<td>944472</td>
+				</tr>		
+				<tr>
+					<td>Emtiaz Ahamad</td>
+					<td><a href="https://www.facebook.com/emtiazahamed.emtu/about?lst=100015464892884%3A100022593811560%3A1600409824" target="new">Click now</a></td>
+					<td>944474</td>
+				</tr>				
+				<tr>
+					<td>Md. Yousuf Ali </td>
+					<td><a href="https://www.facebook.com/profile.php?id=100011392821957" target="new">Click now</a></td>
+					<td>944475</td>
+				</tr>
+				<tr>
+					<td>Matheus Justin Hasda</td>
+					<td><a href="https://www.facebook.com/justin.hasdak" target="new">Click now</a></td>
+					<td>944476</td>
+				</tr>			
+				<tr>
+					<td>Sirajum Monira</td>
+					<td><a href="https://www.facebook.com/Shopnil.akash654" target="new">Click now</a></td>
+					<td>944477</td>
+				</tr>		
+				<tr>
+					<td>Md Sourov Islam </td>
+					<td><a href="https://www.facebook.com/engineersourov" target="new">Click now</a></td>
+					<td>944478</td>
+				</tr>			
+				<tr>
+					<td>Nafisa Tasnia </td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>944479</td>
+				</tr>			
+				<tr>
+					<td>Md. Fahim Hossen </td>
+					<td><a href="https://www.facebook.com/fahim.hosen.9250" target="new">Click now</a></td>
+					<td>944480</td>
+				</tr>			
+				<tr>
+					<td>Nirob Chandra Roy</td>
+					<td><a href="https://www.facebook.com/nirob.roynb.7" target="new">Click now</a></td>
+					<td>944481</td>
+				</tr>			
+				<tr>
+					<td>Mst. Tania Aktar</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>944482</td>
+				</tr>			
+				<tr>
+					<td>Jeba Pervin</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>944484</td>
+				</tr>		
+				<tr>
+					<td>Raj</td>
+					<td><a href="https://www.facebook.com/profile.php?id=100016948756689&__tn__=lC-R&eid=ARDem1Bg9rJMLfehu9bw1VghGA06mplG_HWZju2Gnd4_pl9tooLRNlan-uqnMeodvDk-l5KUpP1YdhUo&hc_ref=ARQ6uxfr3-8PKLheMmgEfMoHl91hL2UVbaHAUOB4-R_umAnAiYMMk38rCNMvIfFVyxI&__xts__[0]=68.ARBESnWS7E_pmkrcoAWYOxLy4p9w_iJhPfJ941OcHgMWF9-87dfMjE3CS6ErirqVuLfsC2W5D0qvKt8VBew3QpQ70vxoWKr_BTvP3xU8v5ClimJHCGMJfh1Tm9L6gcKkU3xzprfHstPLXFwHtvU5IuKjovHFrIpgG49yAFXlE2l2ZNCjbOFrNROATwdryS4pkVx93Xeyqxpd0Rm1TnganDmU9QpEItDa_JnagX__gqP_fbmrHL6br2AuQa5pXVDGs2OprDkik0XguM_oKOKpn-iCIr1fjjNF00k" target="new">Click now</a></td>
+					<td>944488</td>
+				</tr>	
+				<tr>
+					<td>Md. Sujon Ali</td>
+					<td><a href="https://www.facebook.com/mdsujan.ali.58323" target="new">Click now</a></td>
+					<td>944489</td>
+				</tr>			
+				<tr>
+					<td>Mst Tamanna Akter</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>944490</td>
+				</tr>			
+				<tr>
+					<td>Tanjina Akter</td>
+					<td><a href="https://www.facebook.com/profile.php?id=100027510408229" target="new">Click now</a></td>
+					<td>944491</td>
+				</tr>		
+				<tr>
+					<td>Sumi Khatun</td>
+					<td><a id="google" href="" target="new">Click now</a></td>
+					<td>944492</td>
+				</tr>			
+				<tr>
+					<td>Md. Mehedi Islam Ripon</td>
+					<td><a href="https://www.facebook.com/mehediislamripon?__tn__=%2Cd-]-h-R&eid=ARB92xbD7n5XYXKbBh2tAgwXHkST3yqBqRy3dNnAHAc98QXz1LFIT8kMDsuIwSEUEVfoNlY1CcdBj_Pp" target="new">Click now</a></td>
+					<td>944493</td>
+				</tr>			
+				<tr>
+					<td>Md. Hasan Mahmood Hemal</td>
+					<td><a href="https://www.facebook.com/oHasan.mahmud" target="new">Click now</a></td>
+					<td>944494</td>
+				</tr>		
+				<tr>
+					<td>Laisur Rahman Labu</td>
+					<td><a href="https://www.facebook.com/mdlaisurrahaman.labu?__tn__=%2Cd-]-h-R&eid=ARBUuGXV6x_-KtIAr94REP6Ka2we92JADh3als-jpKqFEC194F6EUFRkJUshddaT_VC6HOBAsxsi_7JM" target="new">Click now</a></td>
+					<td>944495</td>
+				</tr>			
+				<tr>
+					<td>Supen Tudu</td>
+					<td><a href="https://www.facebook.com/sb.sopnil.9?__tn__=%2Cd-]-h-R&eid=ARDCI6k6r4t07tD-MMiEg3oBjomO4Qb7XnG4Ra0Qg0GnZvoNWH82afkFXjKbX34SZi9E1OwJR1H5W4dy" target="new">Click now</a></td>
+					<td>944498</td>
+				</tr>		
+				<tr>
+					<td>Moure Khatun</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>944499</td>
+				</tr>		
+				<tr>
+					<td>Md. Al-Amin Hossain</td>
+					<td><a href="https://www.facebook.com/rideremon.emon" target="new">Click now</a></td>
+					<td>944500</td>
+				</tr>			
+				<tr>
+					<td>Mst. Sadia Afrin</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>944502</td>
+				</tr>		
+				<tr>
+					<td>Mst Monira Yeasmin</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>944503</td>
+				</tr>		
+				<tr>
+					<td>Benjamin Hasdak</td>
+					<td><a href="https://www.facebook.com/benjamin.hasdak" target="new">Click now</a></td>
+					<td>944505</td>
+				</tr>			
+				<tr>
+					<td>Sumaiya Akter</td>
+					<td><a href="" target="new">Click now</a></td>
+					<td>944506</td>
+				</tr>		
+				<tr>
+					<td>Md. Sohel Rana</td>
+					<td><a href="https://www.facebook.com/sohel.firoj?__tn__=%2Cd-]-h-R&eid=ARD2OSBtdzEe_HsnNoWx8cPVsazXwo3rc6asMKS0UAglOv3_GWgCiGUQQ934ePze1wqaGFfX43rKMDTM" target="new">Click now</a></td>
+					<td>981627</td>
+				</tr>				<tr>
+					<td>Amerson Bitto Tudu</td>
+					<td><a href="https://www.facebook.com/profile.php?id=100004917644907&__tn__=%2Cd-]-h-R&eid=ARAoLpdrvbRsdvWL-k3eFqej1kBWYsmEYwkrla_igp1AIc9f5gnRqEDWo_kvnrYOEIEeQZnV9Ee263SI" target="new">Click now</a></td>
+					<td>981628</td>
+				</tr>				
+				<td>MD.Sazadur rahaman</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>302948 </td>
+				</tr>				
+				<td>Md Ariful Islam</td>
+					<td><a href="https://www.facebook.com/profile.php?id=100007933901215&__tn__=%2Cd-]-h-R&eid=ARCdYgObwxx5BNYPCrTzTig8bdwf7lSxl6sjtwCysP85JCnGDfZtltIaFHNI-aFNJ-z6_taYAmrvy_TW" target="new">Click now</a></td>
+					<td>201875 </td>
+				</tr>				
+				<td>Atik Arman</td>
+					<td><a href="https://www.facebook.com/atik.arman.52" target="new">Click now</a></td>
+					<td>302938</td>
+				</tr>				
+				<td>Kabaur Rahaman</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>302946</td>
+				</tr>			
+				<td>Ashab Kabir tanvir</td>
+					<td><a href="https://www.facebook.com/ashab.kobir.1?__tn__=%2Cd-]-h-R&eid=ARCGH14ohPenENYgOH2vHcIat1VB3ABsk4kndcgP7wCsZ1P4L_MyKFRP8HUan4MJlSTSm_YNmG3ITH6M" target="blank">Click now</a></td>
+					<td>302953</td>
+				</tr>		
+				<td>Rakib Bin</td>
+					<td><a href="https://www.facebook.com/Rakib.bin.moftazul.Reza10" target="blank">Click now</a></td>
+					<td>302958</td>
+				</tr>			
+				<td>Moontarin Akter</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>100028</td>
+				</tr>			
+				<td>Sumon Parves</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>624336</td>
+				</tr>			
+				<td>Choin Shaha</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>302936</td>
+				</tr>			
+				<td>Mosrafa khanom</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>979896</td>
+				</tr>			
+				<td>Shuvo Chandro Roy</td>
+					<td><a id="google" href="http://google.com" target="blank">Click now</a></td>
+					<td>624351</td>
+				</tr>
+			</tbody>
+		
+		</table>
+		
+		<br /><br />
+		
+		<p style="font-size: 18px;"><mark>This People Search By Google:</mark> Mirmoy, Marjan, Sathi, Ariful, Roshni, Miftaul, Tithe, Nafisa, Tania, Jeba, Tamanna, Sumi, Moure, Sadia, Monira Yeasmin, Sumaiya, Kabaur, Moontarin, Sumon Parves, Shuvo Chandro Roy, Mosrafa khanom, Choin Shaha. </p>
+		
+		
+		<footer style="background-color: black; padding: 10px;  text-align: center; font-size: 25px;">
+			<span style="color: white;">© ২০২০ All rights reserved by Abdul Gaffar</span>
+		</footer>
+		
+	</div>
+	
+	<!--  eta dile google theke jQuery ta pabe.  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+	
+		// Filtering Code Start
+	
+		$(document).ready(function(){
+
+			$("#myInput").on("keyup", function() {
+			  
+				var value = $(this).val().toLowerCase();
+				
+				$("#myTable tr").filter(function() {
+				
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+				});
+			});
+		});
+
+		// Filtering Code End
+		
+		
+		$('a').click( function (){
+		
+			confirm('Are You Sure.');
+		
+		} );
+		
+			// Input tag er JQuery Code..	
+			
+		$('#myInput').blur( function (){
+			
+				var home = $('#myInput').val();
+				
+				if( home == '' ){
+				
+					$('#myInput').css('border', '1px solid red');
+					$('img').show();
+					
+				}
+				else{
+				
+					$('#myInput').css('border', '1px solid black');
+					$('img').hide();
+					
+				}
+		
+		});
+		
+		
+	</script>
+
+
+</body>
+</html>
